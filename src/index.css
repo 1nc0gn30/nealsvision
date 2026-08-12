@@ -1,0 +1,202 @@
+:root {
+  --bg-sand: #FAF7F2;
+  --bg-card: #FFFFFF;
+  --text-main: #2C2623;
+  --text-muted: #6E655F;
+  --accent-warm: #E27D60;
+  --accent-amber: #D8A47F;
+  --accent-ocean: #417B8C;
+  --accent-soft-bg: #F4EFEA;
+  --border-light: #E8E2D9;
+  
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-handwriting: 'Caveat', cursive, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-sand);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(#E5DFD5 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background Floating Parallax Watermarks */
+.watermark-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.parallax-watermark {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  mix-blend-mode: multiply;
+  transition: transform 0.15s cubic-bezier(0.1, 0.5, 0.1, 1);
+  will-change: transform;
+}
+
+.parallax-watermark.watermark-camera {
+  top: 15%;
+  left: -40px;
+  width: 280px;
+  opacity: 0.07;
+  filter: sepia(0.3) contrast(1.2);
+  animation: floatSlow 12s ease-in-out infinite alternate;
+}
+
+.parallax-watermark.watermark-seal {
+  top: 45%;
+  right: -50px;
+  width: 320px;
+  opacity: 0.06;
+  filter: sepia(0.4) contrast(1.1);
+  animation: floatMedium 15s ease-in-out infinite alternate-reverse;
+}
+
+.parallax-watermark.watermark-beach {
+  bottom: 8%;
+  left: 5%;
+  width: 260px;
+  opacity: 0.06;
+  filter: sepia(0.2) contrast(1.2);
+  animation: floatSlow 18s ease-in-out infinite alternate;
+}
+
+.parallax-watermark.watermark-headshot {
+  top: 75%;
+  right: 8%;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0.04;
+  filter: grayscale(100%) contrast(1.3);
+  animation: floatMedium 14s ease-in-out infinite alternate;
+}
+
+@keyframes floatSlow {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+  100% { transform: translateY(10px) rotate(-1deg); }
+}
+
+@keyframes floatMedium {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-25px) rotate(-3deg); }
+  100% { transform: translateY(12px) rotate(2deg); }
+}
+
+/* Live status pulse for alert banner */
+@keyframes pulseLive {
+  0%, 100% { box-shadow: 0 0 6px #4ADE80; opacity: 1; }
+  50% { box-shadow: 0 0 14px #4ADE80, 0 0 28px rgba(74,222,128,0.4); opacity: 0.7; }
+}
+
+/* Focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid var(--accent-warm);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Content z-index layer above watermarks */
+header, main, footer, [role="banner"] {
+  position: relative;
+  z-index: 1;
+}
+
+/* Sticky header sits above everything */
+header[style*="sticky"] {
+  z-index: 50;
+}
+
+/* Responsive: hide long subtitle on small screens */
+@media (max-width: 480px) {
+  .parallax-watermark.watermark-camera {
+    width: 180px;
+  }
+  .parallax-watermark.watermark-seal {
+    width: 200px;
+  }
+  .parallax-watermark.watermark-beach {
+    width: 160px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-sand);
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CFCE;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BAADA9;
+}
+
+/* Polaroid Card Effect */
+.polaroid-frame {
+  background: #FFFFFF;
+  padding: 16px 16px 24px 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07), 0 2px 6px rgba(0, 0, 0, 0.04);
+  border-radius: 2px;
+  transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.35s ease;
+  position: relative;
+  user-select: none;
+}
+
+.polaroid-frame:hover {
+  transform: translateY(-8px) rotate(1deg) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 4px 12px rgba(0, 0, 0, 0.06);
+  z-index: 10;
+}
+
+.polaroid-image-wrapper {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ECE7E1;
+  position: relative;
+}
+
+.polaroid-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.polaroid-caption {
+  font-family: var(--font-handwriting);
+  font-size: 1.45rem;
+  color: #36302C;
+  text-align: center;
+  margin-top: 14px;
+  line-height: 1.2;
+}
+
+/* Soft backdrop blur for modals */
+.modal-overlay {
+  background: rgba(44, 38, 35, 0.45);
+  backdrop-filter: blur(8px);
+}
