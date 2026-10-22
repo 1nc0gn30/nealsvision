@@ -799,7 +799,7 @@ export default function App() {
                     </div>
                     <div>
                       <label htmlFor="booking-phone" style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-main)', marginBottom: '6px' }}>Phone / Text Number</label>
-                      <input id="booking-phone" type="tel" name="phone" required placeholder="(555) 000-0000" value={bookingForm.phone} onChange={(e) => setBookingForm({...bookingForm, phone: e.target.value})} style={inputStyle} />
+                      <input id="booking-phone" type="tel" name="phone" required placeholder="(948) 204-7987" value={bookingForm.phone} onChange={(e) => setBookingForm({...bookingForm, phone: e.target.value})} style={inputStyle} />
                     </div>
                   </div>
 
