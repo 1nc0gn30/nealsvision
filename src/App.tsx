@@ -233,14 +233,14 @@ export default function App() {
           {/* Logo + Brand — clicking returns to gallery */}
           <button
             onClick={() => setActiveTab('gallery')}
-            aria-label="Neal's Vision home — Virginia Beach instant polaroid photographer"
+            aria-label="1nc0gn30 Vision home — Virginia Beach instant polaroid photographer"
             style={{ display: 'flex', alignItems: 'center', gap: '14px', background: 'none', border: 'none', cursor: 'pointer', padding: '4px 6px', borderRadius: '12px', transition: 'background 0.2s' }}
             onMouseOver={e => (e.currentTarget.style.background = 'var(--accent-soft-bg)')}
             onMouseOut={e => (e.currentTarget.style.background = 'none')}
           >
             <img 
               src={userLogoUrl || "/text-logo.jpg"} 
-              alt="Neal's Vision 757TECH.PRO — Virginia Beach Instant Polaroid Photographer Logo"
+              alt="1nc0gn30 Vision 1NC0GN30.SI — Virginia Beach Instant Polaroid Photographer Logo"
               width={220}
               height={54}
               style={{ 
@@ -254,7 +254,7 @@ export default function App() {
             />
             <div style={{ textAlign: 'left' }}>
               <div style={{ fontFamily: 'var(--font-serif)', fontSize: '1.3rem', fontWeight: 700, color: 'var(--text-main)', lineHeight: 1.1 }}>
-                Neal's Vision
+                1nc0gn30 Vision
               </div>
               <div style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: 500, letterSpacing: '0.03em', marginTop: '2px' }}>
                 Virginia Beach • Instant Polaroids • Walk-up Welcome
@@ -314,12 +314,12 @@ export default function App() {
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
                   <img 
                     src={userLogoUrl || "/text-logo.jpg"} 
-                    alt="Neal's Vision 757TECH.PRO"
+                    alt="1nc0gn30 Vision 1NC0GN30.SI"
                     style={{ height: '38px', width: 'auto', borderRadius: '8px', objectFit: 'contain', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
                   />
                   <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', background: 'var(--accent-soft-bg)', border: '1px solid var(--border-light)', padding: '4px 12px', borderRadius: '20px', fontSize: '0.8rem', color: 'var(--accent-warm)', fontWeight: 600 }}>
                     <Sparkles size={13} />
-                    <span>757TECH.PRO • Virginia Beach, VA</span>
+                    <span>1NC0GN30.SI • Virginia Beach, VA</span>
                   </div>
                 </div>
 
@@ -426,18 +426,18 @@ export default function App() {
         </section>
 
         {/* ─── LOGO TRUST BAR ─── */}
-        <section aria-label="About Neal's Vision brand" style={{ marginBottom: '48px' }}>
+        <section aria-label="About 1nc0gn30 Vision brand" style={{ marginBottom: '48px' }}>
           <div style={{ background: 'rgba(255,255,255,0.8)', border: '1px solid var(--border-light)', borderRadius: '16px', padding: '20px 28px', backdropFilter: 'blur(6px)' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
               {/* Logo featured prominently */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                 <img 
                   src={userLogoUrl || "/text-logo.jpg"} 
-                  alt="Neal's Vision 757TECH.PRO official logo"
+                  alt="1nc0gn30 Vision 1NC0GN30.SI official logo"
                   style={{ height: '46px', width: 'auto', borderRadius: '8px', objectFit: 'contain', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
                 />
                 <div>
-                  <div style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, fontSize: '1rem', color: 'var(--text-main)' }}>Neal's Vision · 757TECH.PRO</div>
+                  <div style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, fontSize: '1rem', color: 'var(--text-main)' }}>1nc0gn30 Vision · 1NC0GN30.SI</div>
                   <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginTop: '2px' }}>Virginia Beach's On-Demand Polaroid Photographer</div>
                 </div>
               </div>
@@ -468,7 +468,7 @@ export default function App() {
                   Recent Polaroid Shots — Virginia Beach
                 </h2>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-                  Real candid moments captured live at the <strong>Virginia Beach Oceanfront Boardwalk</strong> &amp; beyond. Printed on-the-spot.
+                  Real candid moments captured live at the <strong>Virginia Beach Oceanfront Boardwalk</strong> & beyond. Printed on-the-spot.
                 </p>
               </div>
               <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
@@ -520,7 +520,7 @@ export default function App() {
 
             {/* CTA below gallery */}
             <div style={{ marginTop: '48px', padding: '28px', background: 'rgba(255,255,255,0.9)', borderRadius: '20px', border: '1px solid var(--border-light)', display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap', backdropFilter: 'blur(6px)' }}>
-              <img src={userLogoUrl || "/text-logo.jpg"} alt="Neal's Vision logo" style={{ height: '44px', width: 'auto', borderRadius: '8px', objectFit: 'contain', flexShrink: 0 }} />
+              <img src={userLogoUrl || "/text-logo.jpg"} alt="1nc0gn30 Vision logo" style={{ height: '44px', width: 'auto', borderRadius: '8px', objectFit: 'contain', flexShrink: 0 }} />
               <div style={{ flex: 1 }}>
                 <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.15rem', marginBottom: '4px' }}>Want YOUR polaroid in Neal's gallery?</h3>
                 <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)' }}>Spot Neal on the Virginia Beach Boardwalk, get your shot printed in seconds, and opt-in to be featured right here!</p>
@@ -619,7 +619,7 @@ export default function App() {
             <div style={{ textAlign: 'center', marginBottom: '44px' }}>
               <img 
                 src={userLogoUrl || "/text-logo.jpg"}
-                alt="Neal's Vision 757TECH.PRO"
+                alt="1nc0gn30 Vision 1NC0GN30.SI"
                 style={{ height: '52px', width: 'auto', borderRadius: '10px', objectFit: 'contain', margin: '0 auto 16px', display: 'block', boxShadow: '0 3px 12px rgba(0,0,0,0.1)' }}
               />
               <h2 id="how-heading" style={{ fontFamily: 'var(--font-serif)', fontSize: '2.1rem', marginBottom: '10px', color: 'var(--text-main)' }}>
@@ -680,7 +680,7 @@ export default function App() {
 
             {/* CTA at bottom of how-it-works */}
             <div style={{ textAlign: 'center', marginTop: '40px', padding: '32px', background: 'rgba(255,255,255,0.9)', borderRadius: '20px', border: '1px solid var(--border-light)', backdropFilter: 'blur(6px)' }}>
-              <img src={userLogoUrl || "/text-logo.jpg"} alt="Neal's Vision logo" style={{ height: '40px', width: 'auto', borderRadius: '8px', objectFit: 'contain', margin: '0 auto 14px', display: 'block' }} />
+              <img src={userLogoUrl || "/text-logo.jpg"} alt="1nc0gn30 Vision logo" style={{ height: '40px', width: 'auto', borderRadius: '8px', objectFit: 'contain', margin: '0 auto 14px', display: 'block' }} />
               <p style={{ fontSize: '1rem', color: 'var(--text-muted)', marginBottom: '18px' }}>
                 Ready for your instant polaroid? Neal is on the <strong>Virginia Beach Boardwalk right now.</strong>
               </p>
@@ -700,7 +700,7 @@ export default function App() {
         {activeTab === 'book' && (
           <section aria-labelledby="book-heading" style={{ maxWidth: '860px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-              <img src={userLogoUrl || "/text-logo.jpg"} alt="Neal's Vision 757TECH.PRO" style={{ height: '46px', width: 'auto', borderRadius: '8px', objectFit: 'contain', margin: '0 auto 14px', display: 'block', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }} />
+              <img src={userLogoUrl || "/text-logo.jpg"} alt="1nc0gn30 Vision 1NC0GN30.SI" style={{ height: '46px', width: 'auto', borderRadius: '8px', objectFit: 'contain', margin: '0 auto 14px', display: 'block', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }} />
               <h2 id="book-heading" style={{ fontFamily: 'var(--font-serif)', fontSize: '2rem', marginBottom: '8px', color: 'var(--text-main)' }}>
                 Find Neal on the Virginia Beach Boardwalk
               </h2>
@@ -765,7 +765,7 @@ export default function App() {
                   <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: '#DEF7EC', color: '#03543F', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px auto' }}>
                     <CheckCircle size={32} />
                   </div>
-                  <img src={userLogoUrl || "/text-logo.jpg"} alt="Neal's Vision" style={{ height: '36px', width: 'auto', borderRadius: '6px', objectFit: 'contain', margin: '0 auto 14px', display: 'block' }} />
+                  <img src={userLogoUrl || "/text-logo.jpg"} alt="1nc0gn30 Vision" style={{ height: '36px', width: 'auto', borderRadius: '6px', objectFit: 'contain', margin: '0 auto 14px', display: 'block' }} />
                   <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>Request Received!</h3>
                   <p style={{ color: 'var(--text-muted)', marginBottom: '24px', fontSize: '0.95rem' }}>
                     {bookingType === 'oceanfront' 
@@ -864,7 +864,7 @@ export default function App() {
             <div style={{ background: 'rgba(255,255,255,0.92)', border: '1px solid var(--border-light)', borderRadius: '24px', padding: '40px 36px', boxShadow: '0 12px 40px rgba(0,0,0,0.06)', backdropFilter: 'blur(10px)' }}>
               
               <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-                <img src={userLogoUrl || "/text-logo.jpg"} alt="Neal's Vision 757TECH.PRO" style={{ height: '54px', width: 'auto', borderRadius: '10px', objectFit: 'contain', margin: '0 auto 16px', display: 'block', boxShadow: '0 4px 14px rgba(0,0,0,0.12)' }} />
+                <img src={userLogoUrl || "/text-logo.jpg"} alt="1nc0gn30 Vision 1NC0GN30.SI" style={{ height: '54px', width: 'auto', borderRadius: '10px', objectFit: 'contain', margin: '0 auto 16px', display: 'block', boxShadow: '0 4px 14px rgba(0,0,0,0.12)' }} />
                 <div style={{ width: '52px', height: '52px', borderRadius: '50%', background: 'rgba(226,125,96,0.1)', color: 'var(--accent-warm)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 12px auto' }}>
                   <Heart size={26} fill="var(--accent-warm)" />
                 </div>
@@ -881,7 +881,7 @@ export default function App() {
                 
                 {[
                   {
-                    href: 'https://buy.stripe.com/7sY00i13L9u86Tm2G4fw40B',
+                    href: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X',
                     amount: '$5',
                     label: '$5 Polaroid Coffee Tip',
                     sub: 'Helps cover a film cartridge refill',
@@ -890,7 +890,7 @@ export default function App() {
                     badge: null,
                   },
                   {
-                    href: 'https://buy.stripe.com/cNi4gyh2J8q4cdGgwUfw40A',
+                    href: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X',
                     amount: '$10',
                     label: '$10 Supporter Tip',
                     sub: 'Keep the mobile Instax printer rolling',
@@ -899,7 +899,7 @@ export default function App() {
                     badge: '⭐ Most Popular',
                   },
                   {
-                    href: 'https://buy.stripe.com/6oU14m6o5bCg5PicgEfw40z',
+                    href: 'https://buy.stripe.com/3cIfZg27PdKo2D64Ocfw40X',
                     amount: '$20',
                     label: '$20 Super Fan Tip',
                     sub: 'Huge support for Neal\'s Vision & gear',
@@ -980,12 +980,12 @@ export default function App() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
               <img 
                 src={userLogoUrl || "/text-logo.jpg"} 
-                alt="Neal's Vision 757TECH.PRO Footer Logo"
+                alt="1nc0gn30 Vision 1NC0GN30.SI Footer Logo"
                 style={{ height: '42px', width: 'auto', borderRadius: '8px', objectFit: 'contain', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}
               />
               <div>
-                <div style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, fontSize: '1.1rem', color: 'var(--text-main)' }}>Neal's Vision</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Virginia Beach Instant Polaroid Photographer • 757TECH.PRO</div>
+                <div style={{ fontFamily: 'var(--font-serif)', fontWeight: 700, fontSize: '1.1rem', color: 'var(--text-main)' }}>1nc0gn30 Vision</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Virginia Beach Instant Polaroid Photographer • 1NC0GN30.SI</div>
               </div>
             </div>
 
@@ -1021,7 +1021,7 @@ export default function App() {
               <span>💛 Walk-up Polaroids · Pay What You Love</span>
             </div>
             <div>
-              © {new Date().getFullYear()} Neal's Vision / 757TECH.PRO — Virginia Beach, VA. All rights reserved.
+              © {new Date().getFullYear()} 1nc0gn30 Vision / 1NC0GN30.SI — Virginia Beach, VA. All rights reserved.
             </div>
           </div>
 
